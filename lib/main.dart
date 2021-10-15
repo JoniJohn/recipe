@@ -22,10 +22,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: SafeArea(child: Container()),
-      floatingActionButton: const FloatingActionButton(
-        onPressed: () {},
+      body: SafeArea(
+        // TODO: replace child: Container()
+        child: Container(),
       ),
     );
   }
+
+  // TODO: add buildRecipeCard() here
 }
