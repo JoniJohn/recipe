@@ -1,6 +1,6 @@
 # recipe
 
-A new Flutter project.
+A new Flutter project as Guided by the Flutter Apprentice.
 
 ## Getting Started
 

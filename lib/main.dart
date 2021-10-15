@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:recipe/model/recipe.dart';
 
 void main() => runApp(App());
 
@@ -33,8 +34,13 @@ class Home extends StatelessWidget {
         title: const Text('Recipe App'),
       ),
       body: SafeArea(
-        // TODO: replace child: Container()
-        child: Container(),
+        child: ListView.builder(
+          itemCount: Recipe.samples.length,
+          itemBuilder: (BuildContext context, int index) {
+            // TODO: to replace with Recipe Card
+            return Text(Recipe.samples[index].label);
+          },
+        ),
       ),
     );
   }
