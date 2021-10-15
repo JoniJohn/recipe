@@ -23,6 +23,9 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: SafeArea(child: Container()),
+      floatingActionButton: const FloatingActionButton(
+        onPressed: () {},
+      ),
     );
   }
 }
