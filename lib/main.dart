@@ -37,13 +37,23 @@ class Home extends StatelessWidget {
         child: ListView.builder(
           itemCount: Recipe.samples.length,
           itemBuilder: (BuildContext context, int index) {
-            // TODO: to replace with Recipe Card
-            return Text(Recipe.samples[index].label);
+            return buildRecipeCard(Recipe.samples[index]);
           },
         ),
       ),
     );
   }
 
-  // TODO: add buildRecipeCard() here
+  Widget buildRecipeCard(Recipe recipe) {
+    return Card(
+      child: Column(
+        children: <Widget>[
+          Image(
+            image: AssetImage(recipe.imageUrl),
+          ),
+          Text(recipe.label)
+        ],
+      ),
+    );
+  }
 }
