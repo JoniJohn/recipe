@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:recipe/model/recipe.dart';
+import 'package:recipe/recipe_detail.dart';
 
 void main() => runApp(App());
 
@@ -43,7 +44,8 @@ class Home extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     // TODO: Replace Text widget with return RecipeDetail()
-                    builder: (context) => const Text("Details Page"),
+                    builder: (context) =>
+                        RecipeDetail(recipe: Recipe.samples[index]),
                   ),
                 );
               },
